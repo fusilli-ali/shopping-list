@@ -1,0 +1,220 @@
+body {
+	background: url("/projects/shopping-list/images/background-bananas.jpg");
+	/*background: url("/projects/shopping-list/images/background-carrots.jpg");*/
+	background-size: cover;
+	background-repeat: none;
+	font-family: 'Kalam', cursive;
+	/*font-family: 'Coming Soon', cursive;*/
+}
+.app {
+	position: relative;
+	z-index: 1;
+	float: right;
+	width: 33%;
+	margin-right: 1.5rem;
+    margin-top: 1.5rem;
+}
+.app:before {
+	content: "";
+	position:absolute;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: white;
+	opacity: 0.5;
+}
+.header {
+	margin-top: -58px;
+	margin-bottom: -67px;
+}
+.header h1 {
+	text-align: center;
+	font-size: 6rem;
+}
+ul.shopping-list {
+    font-size: 1.5rem;
+    text-transform: lowercase;
+    line-height: 25px;
+    list-style-type: none;
+    width: 85%;
+}
+li.done {
+	font-style: italic;
+	text-decoration: line-through;
+	font-weight: 100;
+	list-style-type: none;
+	color: white;
+}
+li:hover {
+	cursor: default;
+}
+.active:before {
+  content: '\f101';
+  font-family: 'FontAwesome';
+  float: left;
+  margin-left: -1.0em;
+  color: #282828 ;
+}
+.item:before {
+  content: '\f101';
+  font-family: 'FontAwesome';
+  float: left;
+  margin-left: -1.0em;
+  color: #282828 ;
+}
+li.done:before {
+  content: '\f104';
+  font-family: 'FontAwesome';
+  float: left;
+  margin-left: -1.0em;
+  color: white;
+}
+.new-list-item,
+.quantity {
+	font-family: 'Kalam', cursive;
+	text-align: center;
+	font-weight: bold;
+}
+.new-list-item-div {
+    padding-left: 10%;
+    display: inline;
+    float: left;
+    width: 65%;
+    padding-bottom: 1.2rem;
+}
+.new-list-item {
+    width: 100%;
+    font-size: 1.5rem;
+}
+.quantity {
+	width: 20px;
+}
+.extra-fields {
+	font-size: 1.5rem;
+	width: 65%;
+    margin: 0 auto;
+}
+.checkbox-div,
+.quantity-div {
+	display: inline;
+	text-align: center;
+}
+.quantity-div {
+	float: left;
+}
+.checkbox-div {
+	float:right;
+}
+.button-div {
+    display: inline;
+    float: right;
+    width: 17%;
+}
+.button {
+    /* display: block; */
+    /* height: 100%; */
+    width: 100%;
+    /* background: #34696f; */
+    /* border: 2px solid rgba(33, 68, 72, 0.59); */
+    /* padding: 6px 3px 7px 8px; */
+    /*text-align: center;*/
+    /* margin: 0 auto; */
+    /* margin-top: 10px; */
+    /* margin-bottom: 6px; */
+    float: right;
+    color: black;
+}
+.shopping-list-div {
+	clear: both;
+}
+/*begin media queries*/
+@media screen and (max-width:930px) {
+	.app {
+		background-color: darkgray;
+		width: 90%;
+		opacity: 0.76;
+	}
+	.item:before {
+    content: '\f101';
+    font-family: 'FontAwesome';
+    float: left;
+    margin-left: -80px;
+    padding-left: 40px;
+    color: #282828;
+	}
+	ul.shopping-list {
+	    font-size: 4.0rem;
+	    text-transform: lowercase;
+	    line-height: 55px;
+	    list-style-type: none;
+	    margin-left: 20px;
+	}
+	li.done:before {
+    content: '\f104';
+    font-family: 'FontAwesome';
+    float: left;
+    margin-left: -80px;
+    color: white;
+}
+	/*
+	li:before {
+		display: none;
+	}
+	*/
+	.header {
+		margin-top: -52px;
+		margin-bottom: -56px;
+	}
+	.header h1 {
+	    text-align: center;
+	    font-size: 6rem;
+	}
+	.new-list-item-div {
+		width: 75%;
+		padding-left: 10%;
+		display: inline;
+	}
+	.new-list-item {
+		width: 100%;
+		font-size: 2rem;
+	}
+	.button-div {
+		width: 10%;
+	}
+	.blog-feed {
+		display: none;
+	}
+}
+.with-coupon {
+    /* float: left; */
+    display: inline;
+}
+.with-quantity {
+    /*display: inline;*/
+}
+.with-both {
+    display: inline;
+}
+.coupon,
+.quantity {
+    color: green;
+    display: inline;
+    float: right;
+    width: 20%;
+    text-align: left;
+}
+#quantity {
+	width: 20%;
+	text-align: center;
+	font-family: 'Kalam', cursive;
+}
+@media screen and (max-width:930px) {
+	.app {
+		background-color: darkgray;
+		width: 90%;
+		opacity: 0.76;
+	}
+}
+155px
